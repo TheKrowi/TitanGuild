@@ -1,0 +1,15 @@
+{
+    "Lua.diagnostics.globals": [
+        "GameTooltip"
+    ],
+    "fsdeploy.nodes": [
+        {
+            "source":"C:\\World of Warcraft Addon Development\\TitanGuild",
+            "target":"F:\\World of Warcraft\\_retail_\\Interface\\AddOns\\TitanGuild",
+            "include":"**/*.{lua,toc,blp,tga,xml,md}",
+            "exclude":"**/{.git,.github,.vscode,Changelogs,Descriptions}/**",
+            "deleteTargetOnDeploy": true
+        }
+    ],
+    "fsdeploy.deployWorkspaceOnSave": true,
+}

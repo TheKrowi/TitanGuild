@@ -352,7 +352,8 @@ TITAN_GUILD_CLASSINDEX = {
 	["Warrior"]      = 9,
 	["Death Knight"] = 10,
 	["Monk"] = 11,
-        ["Demon Hunter"] = 12,
+    ["Demon Hunter"] = 12,
+	["Evoker"] = 13,
 -- de
 	["Druide"] = 1,
 	["Druidin"] = 1,

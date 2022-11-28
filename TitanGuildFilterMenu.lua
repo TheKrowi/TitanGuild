@@ -58,7 +58,7 @@ end
 ----------------------------------------------------------------------
 function TitanPanelGuildButton_BuildClassFilterMenu()
 	local classIndex;
-	TitanPanelRightClickMenu_AddTitle(_G["L_UIDROPDOWNMENU_MENU_VALUE"], _G["L_UIDROPDOWNMENU_MENU_LEVEL"]);
+	TitanPanelRightClickMenu_AddTitle(_G["UIDROPDOWNMENU_MENU_VALUE"], _G["UIDROPDOWNMENU_MENU_LEVEL"]);
 	for classIndex = 1, table.getn(classListValues) do
 		info = {};
 		info.text = classListLabels[classIndex];
@@ -67,7 +67,7 @@ function TitanPanelGuildButton_BuildClassFilterMenu()
 		if (classListValues[classIndex] == TitanGetVar(TITAN_GUILD_ID, "FilterClasses")) then
 			info.checked = 1;
 		end
-		L_UIDropDownMenu_AddButton(info, _G["L_UIDROPDOWNMENU_MENU_LEVEL"]);
+		UIDropDownMenu_AddButton(info, _G["UIDROPDOWNMENU_MENU_LEVEL"]);
 	end
-	TitanPanelRightClickMenu_AddCommand(TITAN_GUILD_MENU_HIDE, TITAN_GUILD_ID, TITAN_GUILD_BUTTON_CLOSEMENU, _G["L_UIDROPDOWNMENU_MENU_LEVEL"]);
+	TitanPanelRightClickMenu_AddCommand(TITAN_GUILD_MENU_HIDE, TITAN_GUILD_ID, TITAN_GUILD_BUTTON_CLOSEMENU, _G["UIDROPDOWNMENU_MENU_LEVEL"]);
 end
